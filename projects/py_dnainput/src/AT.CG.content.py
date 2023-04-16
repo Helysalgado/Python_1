@@ -1,3 +1,23 @@
+## ---------------------------
+##
+## Script name: AT.GC.content 
+##
+##
+## Author: Bernardo Chombo Álvarez
+##
+## Date Created: 2023-03-30
+##
+## Copyright (c) Bernardo, Chombo-Álvarez 2023
+## Email: bchombo@lcg.unam.mx
+##
+## ---------------------------
+##
+## Notes: This script outputs the percentage of AT and GC content from file 'dna.txt' which is in 'data/' folder inside this project.
+##
+## IMPORTANT: It first sets the work directory to the path where 'dna.txt' is found. Change it to own directory so it functions. User can download 'dna.txt' form 'data/' folder inside this project.
+##
+## ---------------------------
+
 import os
 
 #Obtaining the directory where de file is found
