@@ -1,3 +1,23 @@
+## ---------------------------
+##
+## Script name: class.nucleotides.counts
+##
+##
+## Author: Bernardo Chombo Álvarez
+##
+## Date Created: 2023-03-30
+##
+## Copyright (c) Bernardo, Chombo-Álvarez 2023
+## Email: bchombo@lcg.unam.mx
+##
+## ---------------------------
+##
+## Notes: This script outputs the start codon position, stop codon position, exon sequence and the amount of A's, T's, C's and G's inside the exon. Target sequence is provided in a message before user inputs sequence.
+##
+## IMPORTANT: No complementary files. Sequence is provided and user inputs it. 
+##
+## ---------------------------
+
 #Defining dna class
 class dna():
     #Variables all set and initialized 
@@ -49,6 +69,7 @@ class dna():
 
 #MAIN
 print('INPUT THE SEQUENCE UP TO ANALYSE\n')
+print('Target sequence:\nAAGGTACGTCGCGCGTTATTAGCCTAAT')
 x = dna(input())
 
 #Applying all the methods to 'x' variable
