@@ -1,56 +1,38 @@
-import os
-
-path = r"C:\Users\chomb\Documents\GitHub\Python_1\scripts"
-os.chdir(path)
-
-#Defining variables 
-dna = 'AAGGTACGTCGCGCGTTATTAGCCTAAT'
-start_codon = 'TAC'
-stop_codon = 'ATT'
-
-#Defining result variables
-start = dna.find(start_codon)
-stop = dna.find(stop_codon)
-
-#Get exon
-exon = dna[start:stop]
-
-#print results
-print('Target Sequence\n',dna,'\n')
-print('Exon begins at position:\t',start)
-print('Exon ends at position:\t',stop)
-print("Exon's length is:\t", len(exon),'\n\n')
-
-#NEW EXERCISE
-dna2 = 'AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC'
-
-#Counting de occurences
-a = dna2.count("A")
-t = dna2.count("T")
-g = dna2.count("G")
-c = dna2.count("C")
-
-#Printing counts
-print('Target Sequence\n',dna2,'\n')
-print('Amount of Adenine:\t',a)
-print('Amount of Thymine:\t',t)
-print('Amount of Guanine:\t',g)
-print('Amount of Cytosine:\t',c)
+## ---------------------------
+##
+## Script name: nucleotides.counts
+##
+##
+## Author: Bernardo Chombo Álvarez
+##
+## Date Created: 2023-03-30
+##
+## Copyright (c) Bernardo, Chombo-Álvarez 2023
+## Email: bchombo@lcg.unam.mx
+##
+## ---------------------------
+##
+## Notes: This script outputs the amount of A's, T's, C's and G's inside a sequence that user inputs.
+##
+## IMPORTANT: No complementary files. User inputs the sequence. 
+##
+## ---------------------------
 
 #INTERACTIVE
-flag = 1
-while flag == True:
+#Using a variable set true for while loop
+flag = True
+while flag:
     print('\nInput the target sequence to analyse')
-    dna3 = input()
+    dna = input().rstrip("\n")
 
     #Counting de occurences
-    a = dna3.count("A")
-    t = dna3.count("T")
-    g = dna3.count("G")
-    c = dna3.count("C")
+    a = dna.count("A")
+    t = dna.count("T")
+    g = dna.count("G")
+    c = dna.count("C")
 
     #Printing counts
-    print('\nTarget Sequence\n',dna3,'\n')
+    print('\nTarget Sequence\n',dna,'\n')
     print('Amount of Adenine:\t',a)
     print('Amount of Thymine:\t',t)
     print('Amount of Guanine:\t',g)
@@ -59,6 +41,8 @@ while flag == True:
     #Repeat
     print('\nDo you want to analyse another sequence?\n')
     print('\t\tYES[1]\tNO[0]')
-    flag = input()
+
+    #Casting the input so loop can continue or stop
+    flag = int(input().rstrip("\n"))
 
 print("\n\t\tPROGRAM TERMINATED\n")
