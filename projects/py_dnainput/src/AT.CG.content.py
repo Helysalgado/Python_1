@@ -21,8 +21,8 @@
 import os
 
 #Obtaining the directory where de file is found
-os.chdir(r"C:\Users\chomb\Documents\GitHub\Python_1\projects\py_dnainput\data")
-print(os.getcwd())
+path = input().rstrip("\n")
+os.chdir(path)
 print('\nYou are currently working on: ',os.getcwd(),'\n***"dna.txt" is found in here***\n')
 
 print('Enter the input file:')
