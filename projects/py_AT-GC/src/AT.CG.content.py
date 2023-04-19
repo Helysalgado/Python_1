@@ -21,6 +21,7 @@
 import os
 
 #Obtaining the directory where de file is found
+print('Enter the path where the target file is located:')
 path = input().rstrip("\n")
 os.chdir(path)
 print('\nYou are currently working on: ',os.getcwd(),'\n***"dna.txt" is found in here***\n')
@@ -33,7 +34,7 @@ f = open(file, "r")
 f = f.read()
 
 #Counting the amount of nucleotides
-print('File content:\n',f)
+print(f'File content:\n{f}\n')
 a = f.count("A")
 t = f.count("T")
 g = f.count("G")
