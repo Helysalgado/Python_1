@@ -49,7 +49,7 @@ class dna():
     #Method that returns the length of exon and its sequence
     def exonlength(self):
         #Slicing the sequence according to start and end of the exon
-        self.exon = self.sequence[self.pos_start:self.pos_stop]
+        self.exon = self.sequence[self.pos_start:self.pos_stop+3]
 
         #Obtaining the length of the exon obtained 
         self.length = len(self.exon)
@@ -68,8 +68,8 @@ class dna():
         return self.string
 
 #MAIN
-print('INPUT THE SEQUENCE UP TO ANALYSE\n')
-print('Target sequence:\nAAGGTACGTCGCGCGTTATTAGCCTAAT')
+print('INPUT THE SEQUENCE UP TO ANALYSE')
+print('SUGESTED Target sequence:\tAAGGTACGTCGCGCGTTATTAGCCTAAT')
 x = dna(input().rstrip("\n"))
 
 #Applying all the methods to 'x' variable
