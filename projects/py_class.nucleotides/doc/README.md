@@ -6,7 +6,7 @@
 <br>
 <p align="center">  <font size="3">Universidad Nacional Autónoma de México, Campus Morelos</font> <br>
 <font size="2"> Licenciatura en Ciencias Genómicas, Semestre 2023-2</font> <br>
-<font size="2"> Python, class.nucleotides.counts.py</font> 
+<font size="2"> Python, nucleotides.counts.py</font> 
 <p/>
 <div style="text-align: justify">
 
