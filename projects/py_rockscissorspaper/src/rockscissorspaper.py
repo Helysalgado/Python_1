@@ -25,8 +25,8 @@ win = 0
 lose = 0
 i = 0
 
-print('Please enter yout option to play:\n')
-print('\ta. piedra\n\tb. papel\n\tc. tijera')
+print('Please enter your option to play:\n')
+print('\t- piedra\n\t- papel\n\t- tijera')
 
 #loop with two conditions: no more than 2 wins and no more than 2 losts.
 while win < 2 and lose < 2:
