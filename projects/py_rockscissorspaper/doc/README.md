@@ -11,18 +11,54 @@
 <div style="text-align: justify">
 
 ### Bernardo Chombo Álvarez
+  
 ## Antecedentes
-La finalidad de este programa es reforzar los conocimientos aprendidos en clase que respectan a la sección de loops.
 
+  El juego de Piedra, Papel o Tijera es un juego de manos en el que existen tres elementos: la piedra, que vence a la tijera rompiéndola, la tijera, que vence al papel cortándolo, y el papel, que vence a la piedra envolviéndola. Se utiliza con mucha frecuencia para decidir quién de dos personas hará algo, tal y como se hace a veces usando una moneda, o para dirimir algún asunto (ver https://es.wikipedia.org/wiki/Piedra,_papel_o_tijera). 
+  
 ## Problema
-Se necesita crear un programa que emule el juego de piedra, papel o tijera. El programa se creó de modo que el primero que llegue a 2 vencidas será el ganador del juego
+  
+Este programa emula el juego de piedra, papel o tijera. El programa se creó de modo que el primero que llegue a 2 vencidas será el ganador del juego
 
 ## Metodología
+  
 1. El programa te da a elegir la opción que deseas jugar (piedra, papel o tijera).
 2. La computadora elige de manera aleatoria entre esas tres opciones.
 3. El programa compara las cadenas y almacena en el valor de 'lose' si perdió el usuario o en el de 'win' si este ganó.
 4. El programa termina cuando 'lose' o 'win' es igual a 2.
 
+### Instalación
+
+Solo se requiere tener python instalado, recomendamos la version más reciente.
+
+### Ejemplos
+
+**1. El usuario da su nombre y la opción "papel"**
+
+  El programa se instala y se corre en línea de comando
+  
+```
+python3 game.py
+```
+
+El programa pedirá la opción
+  
+```
+Please enter yout option to play:
+
+	a. piedra
+	b. papel
+	c. tijera
+
+**NOW PLAYING GAME 1
+piedra
+Computer choice:	tijera
+Your choice:		piedra
+FINAL RESULT:		GANASTE
+ ```
+  
+  ( seguir describiendo la funcionalidad del programa)
+  
 ## Resultados
 ![Resultados](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi290JKIwfSy9Pjp3lDHhXee3r0J94Z7e7k5gpUv55j4XIA5-E271qy4flQcHbgE_HQbb_HFTKQ6GRmvAOLJDprW7eEAyLrEmKNtExMoPPnNqe8p2cMXRmHi9EkQ6pqzHpi3BENMBHVNe1PxUq5_Kxcq2xzdGtPi1WGKj9027QQZ071zA_1-wOk8HQ2/s500/rockscissorspaper.png)
 
